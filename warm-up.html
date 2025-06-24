@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2: Warm-Up - Subject-Verb Agreement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-header">
+        <h1>🏃‍♀️ Lesson 2: Warm-Up</h1>
+        <p>Let's discover subject-verb agreement through a fun detective story!</p>
+    </div>
+
+    <div class="content-section">
+        <h2>🎯 Why This Matters</h2>
+        <p>Subject-verb agreement is everywhere in writing! When subjects and verbs don't agree, sentences sound awkward and can confuse readers. Think of it like a dance - the subject and verb need to move together in harmony. Let's become grammar detectives and spot the mistakes!</p>
+    </div>
+
+    <div class="content-section">
+        <h2>📖 Detective Story: The Mystery of the Missing Homework</h2>
+        <div class="story-passage">
+            <p><strong>Your mission:</strong> Read this story and identify sentences where the subject and verb don't agree. Some sentences are correct!</p>
+            <br>
+            <p>Detective Sarah <u>walk</u> into the classroom on Monday morning. The students <u>looks</u> worried because their homework <u>has</u> disappeared! "The teacher <u>want</u> answers," whispers Jake. Sarah <u>notices</u> that the papers <u>was</u> scattered on the floor. Three pencils <u>lies</u> near the window. "Someone <u>have</u> been here," she <u>thinks</u>. The mystery <u>needs</u> solving, and the clues <u>points</u> to the janitor's closet.</p>
+        </div>
+    </div>
+
+    <div class="exercise">
+        <h3>🔍 Your Detective Work</h3>
+        <p>Click on each underlined word to check if it agrees with its subject. Use the hints if you need help!</p>
+        
+        <div class="question">
+            <strong>1.</strong> "Detective Sarah <span style="text-decoration: underline; cursor: pointer;" onclick="checkAnswer(1, 'walk', 'walks')">walk</span> into the classroom..."
+            <button class="hint-button" data-hint="hint1">Hint</button>
+            <div id="hint1" class="hint">Sarah is one person (singular), so the verb needs to end in -s.</div>
+            <div id="result1"></div>
+        </div>
+
+        <div class="question">
+            <strong>2.</strong> "The students <span style="text-decoration: underline; cursor: pointer;" onclick="checkAnswer(2, 'looks', 'look')">looks</span> worried..."
+            <button class="hint-button" data-hint="hint2">Hint</button>
+            <div id="hint2" class="hint">Students is plural (more than one), so the verb should NOT end in -s.</div>
+            <div id="result2"></div>
+        </div>
+
+        <div class="question">
+            <strong>3.</strong> "their homework <span style="text-decoration: underline; cursor: pointer;" onclick="checkAnswer(3, 'has', 'correct')">has</span> disappeared!"
+            <button class="hint-button" data-hint="hint3">Hint</button>
+            <div id="hint3" class="hint">Homework is singular (even though it might seem like a lot of work!), so 'has' is correct.</div>
+            <div id="result3"></div>
+        </div>
+
+        <div class="question">
+            <strong>4.</strong> "The teacher <span style="text-decoration: underline; cursor: pointer;" onclick="checkAnswer(4, 'want', 'wants')">want</span> answers..."
+            <button class="hint-button" data-hint="hint4">Hint</button>
+            <div id="hint4" class="hint">The teacher is one person (singular), so the verb needs -s.</div>
+            <div id="result4"></div>
+        </div>
+
+        <div class="question">
+            <strong>5.</strong> "the papers <span style="text-decoration: underline; cursor: pointer;" onclick="checkAnswer(5, 'was', 'were')">was</span> scattered..."
+            <button class="hint-button" data-hint="hint5">Hint</button>
+            <div id="hint5" class="hint">Papers is plural, so use 'were' instead of 'was'.</div>
+            <div id="result5"></div>
+        </div>
+    </div>
+
+    <div class="summary">
+        <h3>🎉 Great Detective Work!</h3>
+        <p><strong>Key Takeaway:</strong> Subject-verb agreement is like matching puzzle pieces. Singular subjects (one person/thing) pair with singular verbs, and plural subjects (more than one) pair with plural verbs. In most cases, singular verbs end in -s, while plural verbs don't!</p>
+        <p><strong>Next:</strong> We'll learn the specific rules that make this matching easier.</p>
+    </div>
+
+    <div class="navigation">
+        <a href="lesson-presentation.html" class="nav-btn secondary">← Lesson 1</a>
+        <a href="explicit-teaching.html" class="nav-btn">Next: Lesson 3 →</a>
+    </div>
+
+    <footer>
+        <p>🔍 Remember: Every detective needs patience and practice!</p>
+        <p style="margin-top: 10px; font-size: 0.9em; color: #666;">✨ Created with care by Seema for effective English learning</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function checkAnswer(questionNum, clickedWord, correctAnswer) {
+            const resultDiv = document.getElementById(`result${questionNum}`);
+            if (correctAnswer === 'correct') {
+                resultDiv.innerHTML = '<span class="correct">✓ Correct! This one was already right.</span>';
+            } else {
+                resultDiv.innerHTML = `<span class="incorrect">✗ Should be "${correctAnswer}"</span>`;
+            }
+        }
+    </script>
+</body>
+</html>
