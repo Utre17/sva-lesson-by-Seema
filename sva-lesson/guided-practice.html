@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4: Speaking Practice - Subject-Verb Agreement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-header">
+        <h1>🗣️ Lesson 4: Speaking Practice</h1>
+        <p>Build confidence through conversation and dialogue practice!</p>
+    </div>
+
+    <div class="content-section">
+        <h2>🌟 Goal: Speak with Confidence</h2>
+        <p>Speaking is where grammar really comes alive! In this lesson, you'll practice real conversations, work on pronunciation, and build the muscle memory for correct subject-verb agreement. Remember: speaking fluently takes practice, so don't worry about perfection - focus on clear communication!</p>
+    </div>
+
+    <!-- Pronunciation Tips Section -->
+    <div class="content-section">
+        <h2>🎵 Pronunciation Tips for Verb Endings</h2>
+        <div class="story-passage" style="background: #d4edda; border-left: 4px solid #28a745; color: #333;">
+            <h3 style="color: #155724;">🔊 Mastering the -S Sound</h3>
+            <p style="color: #333;">The -s ending in verbs has three different sounds. Practice saying these out loud:</p>
+            <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                <p style="color: #333;"><strong>/s/ sound:</strong> "works" "makes" "takes" "speaks"</p>
+                <p style="color: #333;"><strong>/z/ sound:</strong> "goes" "plays" "runs" "learns"</p>
+                <p style="color: #333;"><strong>/ɪz/ sound:</strong> "teaches" "watches" "passes" "fixes"</p>
+            </div>
+            <p style="color: #495057;"><strong>Practice tip:</strong> Say each word slowly, then speed up naturally. The -s should flow smoothly with the rest of the word.</p>
+        </div>
+    </div>
+
+    <!-- Dialogue Completion Exercise -->
+    <div class="content-section">
+        <h2>💬 Exercise 1: Complete the Conversations</h2>
+        <div class="exercise">
+            <p><strong>Practice speaking these dialogues out loud. Choose the correct verb, then say the whole conversation:</strong></p>
+            
+            <div class="story-passage" style="background: #fff3cd; border-left: 4px solid #ffc107; color: #333;">
+                <h4 style="color: #856404;">📞 Scenario A: Calling a Restaurant</h4>
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <div class="question">
+                        <p style="color: #333;"><strong>Receptionist:</strong> "Hello, how can I help you?"</p>
+                        <p style="color: #333;"><strong>You:</strong> "Hi, I'd like to make a reservation. My family 
+                        <select id="conv1" onchange="speakingFeedback('conv1', 'wants')">
+                            <option value="">Choose...</option>
+                            <option value="wants">wants</option>
+                            <option value="want">want</option>
+                        </select> to eat at your restaurant tonight."</p>
+                        <button class="hint-button" data-hint="conv1-hint">Speaking Tip</button>
+                        <div id="conv1-hint" class="hint">In speech, "family" is treated as one unit, so use "wants". Practice saying: "My family wants to eat there."</div>
+                        <div id="conv1-result"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-passage" style="background: #d1ecf1; border-left: 4px solid #17a2b8; color: #333;">
+                <h4 style="color: #0c5460;">🏢 Scenario B: Team Meeting at Work</h4>
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <div class="question">
+                        <p style="color: #333;"><strong>Manager:</strong> "How is the project going?"</p>
+                        <p style="color: #333;"><strong>You:</strong> "Everyone on our team 
+                        <select id="conv2" onchange="speakingFeedback('conv2', 'is')">
+                            <option value="">Choose...</option>
+                            <option value="is">is</option>
+                            <option value="are">are</option>
+                        </select> working hard. We 
+                        <select id="conv3" onchange="speakingFeedback('conv3', 'believe')">
+                            <option value="">Choose...</option>
+                            <option value="believes">believes</option>
+                            <option value="believe">believe</option>
+                        </select> we'll finish on time."</p>
+                        <button class="hint-button" data-hint="conv2-hint">Speaking Tip</button>
+                        <div id="conv2-hint" class="hint">"Everyone" is always singular in English speech. "We" is always plural. Practice the rhythm!</div>
+                        <div id="conv2-result"></div>
+                        <div id="conv3-result"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-passage" style="background: #f8d7da; border-left: 4px solid #dc3545; color: #333;">
+                <h4 style="color: #721c24;">☕ Scenario C: Coffee Shop Chat</h4>
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <div class="question">
+                        <p style="color: #333;"><strong>Friend:</strong> "How are your kids doing in school?"</p>
+                        <p style="color: #333;"><strong>You:</strong> "Both of my children 
+                        <select id="conv4" onchange="speakingFeedback('conv4', 'love')">
+                            <option value="">Choose...</option>
+                            <option value="loves">loves</option>
+                            <option value="love">love</option>
+                        </select> their new teachers. My son 
+                        <select id="conv5" onchange="speakingFeedback('conv5', 'plays')">
+                            <option value="">Choose...</option>
+                            <option value="plays">plays</option>
+                            <option value="play">play</option>
+                        </select> soccer after school."</p>
+                        <button class="hint-button" data-hint="conv3-hint">Speaking Tip</button>
+                        <div id="conv3-hint" class="hint">"Both" signals plural, so "love". "My son" is one person, so "plays". Listen to the natural rhythm!</div>
+                        <div id="conv4-result"></div>
+                        <div id="conv5-result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Role-Play Practice -->
+    <div class="content-section">
+        <h2>🎭 Exercise 2: Role-Play Scenarios</h2>
+        <div class="exercise">
+            <p><strong>Practice these role-plays out loud. Focus on clear pronunciation and natural rhythm:</strong></p>
+            
+            <div class="story-passage" style="background: #e2e3ff; border-left: 4px solid #6f42c1; color: #333;">
+                <h4 style="color: #432874;">📋 Job Interview Practice</h4>
+                <p style="color: #6c757d;"><em>Read both parts out loud, paying attention to subject-verb agreement:</em></p>
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <p style="color: #333;"><strong>Interviewer:</strong> "Tell me about your work experience."</p>
+                    <p style="color: #333;"><strong>Practice Response:</strong> "My previous job <strong style="color: #dc3545;">gives</strong> me excellent customer service skills. Each client <strong style="color: #dc3545;">has</strong> different needs, and I <strong style="color: #dc3545;">listen</strong> carefully to understand what they <strong style="color: #dc3545;">want</strong>. All my colleagues <strong style="color: #dc3545;">say</strong> I <strong style="color: #dc3545;">work</strong> well in a team."</p>
+                    <p style="color: #6c757d;"><em>Now try creating your own version using these patterns!</em></p>
+                </div>
+            </div>
+
+            <div class="story-passage" style="background: #d4edda; border-left: 4px solid #28a745; color: #333;">
+                <h4 style="color: #155724;">🛒 Shopping Practice</h4>
+                <p style="color: #6c757d;"><em>Practice this shopping conversation:</em></p>
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <p style="color: #333;"><strong>Shopkeeper:</strong> "Can I help you find anything?"</p>
+                    <p style="color: #333;"><strong>Practice Response:</strong> "Yes, my family <strong style="color: #dc3545;">needs</strong> some groceries. Each person <strong style="color: #dc3545;">has</strong> their favorite snacks, but everyone <strong style="color: #dc3545;">agrees</strong> on fresh vegetables. The children <strong style="color: #dc3545;">love</strong> apples."</p>
+                    <p style="color: #6c757d;"><em>Try variations: "My wife needs..." "The kids want..." "We prefer..."</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Speaking Tempo Exercise -->
+    <div class="content-section">
+        <h2>⏱️ Exercise 3: Speaking Tempo Practice</h2>
+        <div class="exercise">
+            <p><strong>Practice speaking these sentences at different speeds - start slow, then build to normal pace:</strong></p>
+            
+            <div style="background: #fff3cd; padding: 20px; border-radius: 12px; margin: 20px 0; border-left: 5px solid #ffc107;">
+                <h4>🐌 Slow Practice (Focus on accuracy):</h4>
+                <p><em>Say each sentence very slowly, emphasizing the verb ending:</em></p>
+                <ul style="font-size: 1.1em; line-height: 1.8;">
+                    <li>"The teacher... <strong>explains</strong>... the lesson... clearly."</li>
+                    <li>"My colleagues... <strong>work</strong>... very hard... every day."</li>
+                    <li>"Everyone... <strong>understands</strong>... the importance... of practice."</li>
+                </ul>
+                
+                <h4>🚶 Normal Speed (Natural rhythm):</h4>
+                <p><em>Now say them at conversation speed:</em></p>
+                <ul style="font-size: 1.1em; line-height: 1.8;">
+                    <li>"The teacher explains the lesson clearly."</li>
+                    <li>"My colleagues work very hard every day."</li>
+                    <li>"Everyone understands the importance of practice."</li>
+                </ul>
+                
+                <h4>💡 Speaking Tips:</h4>
+                <ul style="font-size: 1em; line-height: 1.6;">
+                    <li><strong>Pause slightly</strong> before the verb to think about the subject</li>
+                    <li><strong>Emphasize</strong> the verb ending clearly but naturally</li>
+                    <li><strong>Record yourself</strong> speaking to hear your progress</li>
+                    <li><strong>Practice daily</strong> with common phrases you use often</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confidence Building -->
+    <div class="content-section">
+        <h2>💪 Exercise 4: Confidence Building Phrases</h2>
+        <div class="exercise">
+            <p><strong>Memorize these common speaking patterns for automatic use:</strong></p>
+            
+            <div style="background: #d1ecf1; padding: 20px; border-radius: 12px; margin: 20px 0; border-left: 5px solid #17a2b8;">
+                <h4>🔄 Daily Practice Patterns:</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px;">
+                    <div style="background: #fff; padding: 15px; border-radius: 8px;">
+                        <h5 style="color: #0c5460;">At Work:</h5>
+                        <ul style="line-height: 1.6;">
+                            <li>"My team <strong>is</strong> ready for the meeting."</li>
+                            <li>"Everyone <strong>knows</strong> their responsibilities."</li>
+                            <li>"The project <strong>requires</strong> careful attention."</li>
+                        </ul>
+                    </div>
+                    <div style="background: #fff; padding: 15px; border-radius: 8px;">
+                        <h5 style="color: #0c5460;">With Family:</h5>
+                        <ul style="line-height: 1.6;">
+                            <li>"My family <strong>enjoys</strong> weekend trips."</li>
+                            <li>"Each child <strong>has</strong> different interests."</li>
+                            <li>"Everyone <strong>helps</strong> with housework."</li>
+                        </ul>
+                    </div>
+                    <div style="background: #fff; padding: 15px; border-radius: 8px;">
+                        <h5 style="color: #0c5460;">Social Situations:</h5>
+                        <ul style="line-height: 1.6;">
+                            <li>"The weather <strong>looks</strong> beautiful today."</li>
+                            <li>"My friends <strong>like</strong> this restaurant."</li>
+                            <li>"Everyone <strong>seems</strong> happy here."</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="summary">
+        <h3>🎉 Speaking Progress Achieved!</h3>
+        <p><strong>You've Practiced:</strong></p>
+        <ul>
+            <li>Pronunciation of verb endings and natural rhythm</li>
+            <li>Real conversation scenarios and dialogue completion</li>
+            <li>Role-play practice for common situations</li>
+            <li>Speaking tempo control and confidence building</li>
+            <li>Memorized patterns for automatic use</li>
+        </ul>
+        <p><strong>Keep Practicing:</strong> The more you speak with correct grammar, the more natural it becomes!</p>
+    </div>
+
+    <div class="navigation">
+        <a href="explicit-teaching.html" class="nav-btn secondary">← Grammar Rules</a>
+        <a href="reading-notation.html" class="nav-btn">Next: Listening & Analysis →</a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function speakingFeedback(elementId, correctAnswer) {
+            const userAnswer = document.getElementById(elementId).value;
+            const resultDiv = document.getElementById(elementId + '-result');
+            
+            if (userAnswer === correctAnswer) {
+                resultDiv.innerHTML = '<p style="color: #28a745; font-weight: bold;">✓ Perfect! Now practice saying the whole sentence out loud.</p>';
+            } else if (userAnswer && userAnswer !== correctAnswer) {
+                resultDiv.innerHTML = `<p style="color: #dc3545; font-weight: bold;">Try "${correctAnswer}" - then practice speaking the sentence!</p>`;
+            }
+        }
+
+        // Add interactive elements for speaking practice
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add speaking practice reminders
+            const exercises = document.querySelectorAll('.exercise');
+            exercises.forEach(exercise => {
+                const reminder = document.createElement('div');
+                reminder.style.cssText = 'background: #e7f3ff; padding: 10px; border-radius: 6px; margin: 10px 0; border-left: 3px solid #007bff; font-style: italic; color: #0056b3;';
+                reminder.innerHTML = '🎯 Remember: Say each sentence out loud for the best practice!';
+                exercise.insertBefore(reminder, exercise.firstChild);
+            });
+        });
+    </script>
+
+    <footer>
+        <p>🗣️ Remember: Speaking practice builds confidence!</p>
+        <p style="margin-top: 10px; font-size: 0.9em; color: #666;">✨ Created with care by Seema for effective English learning</p>
+    </footer>
+</body>
+</html>
