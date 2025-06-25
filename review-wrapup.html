@@ -18,85 +18,198 @@
     </div>
 
     <div class="content-section">
-        <h2>🧠 Knowledge Check: The Ultimate Challenge</h2>
+        <h2>🧠 Comprehensive Mastery Challenge</h2>
         <div class="exercise">
-            <p>This comprehensive quiz combines everything you've learned. Take your time and use your skills!</p>
+            <p>This final assessment tests your real-world grammar skills through multiple formats. Show everything you've learned!</p>
             
-            <div class="story-passage">
-                <h3>📖 The Final Story: "Graduation Day Success"</h3>
-                <p>Complete this story about your grammar success by choosing the correct verbs:</p>
+            <!-- Speaking Practice Challenge -->
+            <div class="story-passage" style="background: #d4edda; border-left: 4px solid #28a745; color: #333;">
+                <h3>🗣️ Part 1: Speaking Confidence Challenge</h3>
+                <p><strong>Record yourself or practice out loud with these scenarios:</strong></p>
+                
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <h4 style="color: #155724;">Scenario A: Sunday Sermon</h4>
+                    <p style="color: #333;"><em>You're delivering a sermon to your congregation. Complete and practice this homily:</em></p>
+                    <div style="background: #f8f9fa; padding: 10px; border-radius: 4px; margin-bottom: 10px; border-left: 3px solid #28a745;">
+                        <p style="margin: 0; color: #495057; font-style: italic;"><strong>Reference:</strong> Our congregation _____ [has/have] grown in faith this year. Everyone _____ [finds/find] strength in prayer. The scriptures _____ [teaches/teach] us about love and compassion. Each parishioner _____ [brings/bring] unique gifts to our community.</p>
+                    </div>
+                    <textarea id="presentation-text" style="width: 100%; height: 100px; margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                    <p style="color: #6c757d; font-style: italic;">Now practice delivering this sermon with confidence and proper grammar!</p>
             </div>
 
-            <div class="question">
-                <p>1. The graduation ceremony <select id="final1"><option value="">Choose...</option><option value="begins">begins</option><option value="begin">begin</option></select> with excitement in the air.</p>
-                <button class="hint-button" data-hint="final-hint1">Hint</button>
-                <div id="final-hint1" class="hint">Ceremony is singular - one ceremony.</div>
-                <div id="final-result1"></div>
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <h4 style="color: #155724;">Scenario B: Parish Council Meeting</h4>
+                    <p style="color: #333;"><em>You're addressing the parish council about community needs. Fill in the blanks and practice:</em></p>
+                    <div style="background: #f8f9fa; padding: 10px; border-radius: 4px; margin-bottom: 10px; border-left: 3px solid #28a745;">
+                        <p style="margin: 0; color: #495057; font-style: italic;"><strong>Reference:</strong> Our parish _____ [needs/need] to address the food bank shortage. Each family _____ [deserves/deserve] support during difficult times. All of our ministries _____ [works/work] together for this cause. Everyone _____ [agrees/agree] that helping others _____ [reflects/reflect] our Christian values.</p>
+                    </div>
+                    <textarea id="community-text" style="width: 100%; height: 100px; margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                    <p style="color: #6c757d; font-style: italic;">Practice delivering this with conviction and correct grammar!</p>
             </div>
 
-            <div class="question">
-                <p>2. All of the students <select id="final2"><option value="">Choose...</option><option value="has">has</option><option value="have">have</option></select> worked hard to reach this moment.</p>
-                <button class="hint-button" data-hint="final-hint2">Hint</button>
-                <div id="final-hint2" class="hint">"All" is plural, and "of the students" confirms this.</div>
-                <div id="final-result2"></div>
+                <button onclick="checkSpeakingChallenge()" class="btn" style="background: linear-gradient(135deg, #28a745, #20c997);">🎤 Check My Speaking Practice</button>
+                <div id="speaking-results" style="margin-top: 15px;"></div>
             </div>
 
-            <div class="question">
-                <p>3. Each graduate <input type="text" id="final3" placeholder="walks/walk"> across the stage with pride.</p>
-                <button class="hint-button" data-hint="final-hint3">Hint</button>
-                <div id="final-hint3" class="hint">"Each" is always singular.</div>
-                <div id="final-result3"></div>
+            <!-- Writing Mastery Challenge -->
+            <div class="story-passage" style="background: #fff3cd; border-left: 4px solid #ffc107; color: #333;">
+                <h3>✍️ Part 2: Professional Writing Mastery</h3>
+                <p><strong>Create original content that demonstrates your skills:</strong></p>
+                
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <h4 style="color: #856404;">Challenge A: Write a Parish Newsletter Update</h4>
+                    <p style="color: #333;">Write a newsletter update for your parish community. Include these subjects:</p>
+                    <ul style="color: #333; margin: 10px 0;">
+                        <li>The congregation (collective noun)</li>
+                        <li>Everyone (indefinite pronoun)</li>
+                        <li>Each ministry (distributive)</li>
+                        <li>The community/parish (potentially confusing nouns)</li>
+                    </ul>
+                    <div style="background: #f8f9fa; padding: 10px; border-radius: 4px; margin-bottom: 10px; border-left: 3px solid #ffc107;">
+                        <p style="margin: 0; color: #495057; font-style: italic;"><strong>Example Format:</strong></p>
+                        <p style="margin: 5px 0; color: #495057; font-style: italic;">Subject: Monthly Parish Update</p>
+                        <p style="margin: 5px 0; color: #495057; font-style: italic;">Dear Beloved Parishioners,</p>
+                        <p style="margin: 5px 0; color: #495057; font-style: italic;">[Write your update here - demonstrate your mastery!]</p>
+                        <p style="margin: 5px 0; color: #495057; font-style: italic;">In Christ's service, Father [Your name]</p>
+                    </div>
+                    <textarea id="email-writing" style="width: 100%; height: 150px; margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
             </div>
 
-            <div class="question">
-                <p>4. The faculty and staff <input type="text" id="final4" placeholder="applauds/applaud"> enthusiastically.</p>
-                <button class="hint-button" data-hint="final-hint4">Hint</button>
-                <div id="final-hint4" class="hint">Two subjects connected by "and" make a plural subject.</div>
-                <div id="final-result4"></div>
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <h4 style="color: #856404;">Challenge B: Create an Inspirational Message</h4>
+                    <p style="color: #333;">Write an uplifting message about faith and learning (140 characters max!):</p>
+                    <div style="background: #f8f9fa; padding: 10px; border-radius: 4px; margin-bottom: 10px; border-left: 3px solid #ffc107;">
+                        <p style="margin: 0; color: #495057; font-style: italic;"><strong>Example:</strong> Just mastered grammar at 50! Everyone can learn new skills. The wisdom it brings shows in everything we write! #LifelongLearning #Faith</p>
+                    </div>
+                    <textarea id="social-post" style="width: 100%; height: 80px; margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" maxlength="140"></textarea>
+                    <p style="color: #6c757d;"><span id="char-count">140</span> characters remaining</p>
             </div>
 
-            <div class="question">
-                <p>5. Everyone in the audience <input type="text" id="final5" placeholder="feels/feel"> proud of the achievements.</p>
-                <button class="hint-button" data-hint="final-hint5">Hint</button>
-                <div id="final-hint5" class="hint">"Everyone" is singular, always.</div>
-                <div id="final-result5"></div>
+                <button onclick="reviewWriting()" class="btn" style="background: linear-gradient(135deg, #ffc107, #fd7e14);">📝 Review My Writing</button>
+                <div id="writing-results" style="margin-top: 15px;"></div>
             </div>
 
-            <div class="question">
-                <p>6. The news about grammar mastery <select id="final6"><option value="">Choose...</option><option value="spreads">spreads</option><option value="spread">spread</option></select> quickly through the school.</p>
-                <button class="hint-button" data-hint="final-hint6">Hint</button>
-                <div id="final-hint6" class="hint">"News" is always singular.</div>
-                <div id="final-result6"></div>
+            <!-- Error Detection Challenge -->
+            <div class="story-passage" style="background: #f8d7da; border-left: 4px solid #dc3545; color: #333;">
+                <h3>🔍 Part 3: Error Detection Expert Challenge</h3>
+                <p><strong>Find and fix all the errors in these real-world texts:</strong></p>
+                
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <h4 style="color: #721c24;">Text A: Parish Newsletter (5 errors to find)</h4>
+                    <p style="color: #333; margin-bottom: 10px;"><em>Read carefully and click on any words you think have subject-verb agreement errors (some clickable words are correct!):</em></p>
+                    <div id="text-a" style="background: #f8f9fa; padding: 15px; border-radius: 4px; margin: 10px 0; font-family: 'Times New Roman', serif; line-height: 1.8; cursor: default;">
+                        <p><strong>Monthly Parish Update</strong></p>
+                        <p>Our congregation <span onclick="checkWord(this, 'celebrate', 'celebrates', 'a')">celebrate</span> the blessing of our new youth center. Each ministry <span onclick="checkWord(this, 'bring', 'brings', 'a')">bring</span> unique <span onclick="checkWord(this, 'gifts', 'gifts', 'a')">gifts</span> to our community. The pastor and parish council <span onclick="checkWord(this, 'supports', 'support', 'a')">supports</span> this wonderful development. Everyone <span onclick="checkWord(this, 'believe', 'believes', 'a')">believe</span> it will <span onclick="checkWord(this, 'strengthen', 'strengthen', 'a')">strengthen</span> our faith community. The news about this expansion <span onclick="checkWord(this, 'were', 'was', 'a')">were</span> welcomed by all <span onclick="checkWord(this, 'parishioners', 'parishioners', 'a')">parishioners</span>. Our faith <span onclick="checkWord(this, 'guide', 'guides', 'a')">guide</span> us in all decisions. The volunteers <span onclick="checkWord(this, 'works', 'work', 'a')">works</span> tirelessly for our mission.</p>
+                    </div>
+                    <p><strong>Errors Found:</strong> <span id="errors-found-a">0</span>/5 | <strong>Attempts:</strong> <span id="attempts-a">0</span></p>
+                    <div id="feedback-a" style="margin-top: 10px;"></div>
+                </div>
+                
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <h4 style="color: #721c24;">Text B: Diocesan Report (5 errors to find)</h4>
+                    <p style="color: #333; margin-bottom: 10px;"><em>Find the subject-verb agreement errors in this formal church report (not every clickable word is wrong!):</em></p>
+                    <div id="text-b" style="background: #f8f9fa; padding: 15px; border-radius: 4px; margin: 10px 0; font-family: 'Times New Roman', serif; line-height: 1.8; cursor: default;">
+                        <p><strong>Annual Ministry Summary</strong></p>
+                        <p>The diocesan committee <span onclick="checkWord(this, 'have', 'has', 'b')">have</span> completed their annual review. Neither the original proposal nor the alternative plan <span onclick="checkWord(this, 'explain', 'explains', 'b')">explain</span> all the community <span onclick="checkWord(this, 'needs', 'needs', 'b')">needs</span>. Each parish representative <span onclick="checkWord(this, 'were', 'was', 'b')">were</span> interviewed individually. All of the feedback <span onclick="checkWord(this, 'suggests', 'suggests', 'b')">suggests</span> further prayer and consideration. The bishop and his advisors <span onclick="checkWord(this, 'reviews', 'review', 'b')">reviews</span> these matters <span onclick="checkWord(this, 'carefully', 'carefully', 'b')">carefully</span>. Everyone <span onclick="checkWord(this, 'agree', 'agrees', 'b')">agree</span> that more time <span onclick="checkWord(this, 'are', 'is', 'b')">are</span> needed for prayer.</p>
+                    </div>
+                    <p><strong>Errors Found:</strong> <span id="errors-found-b">0</span>/5 | <strong>Attempts:</strong> <span id="attempts-b">0</span></p>
+                    <div id="feedback-b" style="margin-top: 10px;"></div>
+                </div>
+                
+                <div id="error-detection-summary" style="margin-top: 20px;"></div>
             </div>
-
-            <button onclick="checkFinalQuiz()" class="btn">Check Final Quiz</button>
-            <div id="final-score"></div>
         </div>
     </div>
 
     <div class="content-section">
         <h2>🔧 Real-World Application</h2>
         <div class="exercise">
-            <h3>💼 Professional Writing Practice</h3>
-            <p>Fix this important email before it goes out to parents:</p>
+            <h3>💬 Pastoral Conversation Quiz</h3>
+            <p><strong>Choose the correct verb forms for these common pastoral conversations:</strong></p>
             
-            <div class="story-passage" style="background: #fff3cd; color: #856404; border-left: 4px solid #ffc107;">
-                <h4>📧 Draft Email to Parents</h4>
-                <p><strong>Subject: Important School Updates</strong></p>
-                <br>
-                <p>
-                    Dear Parents and Guardians,<br><br>
-                    
-                    The school board <span class="email-error" onclick="fixEmailError(1, 'have', 'has')">have</span> decided to implement new policies. Each of the new rules <span class="email-error" onclick="fixEmailError(2, 'affect', 'affects')">affect</span> student safety. The administration and teachers <span class="email-correct">support</span> these changes. Everyone <span class="email-error" onclick="fixEmailError(3, 'need', 'needs')">need</span> to review the handbook. Both morning and afternoon programs <span class="email-error" onclick="fixEmailError(4, 'continues', 'continue')">continues</span> as scheduled. The entire community <span class="email-error" onclick="fixEmailError(5, 'benefit', 'benefits')">benefit</span> from these improvements.<br><br>
-                    
-                    Thank you for your attention to this matter.<br>
-                    The Administration Team
-                </p>
+            <div class="story-passage" style="background: #e7f3ff; border-left: 4px solid #2196f3; color: #333;">
+                <h4>📞 Scenario A: Marriage Counseling</h4>
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <div class="question">
+                        <p style="color: #333;"><strong>You say to the couple:</strong> "Each of your families 
+                        <select id="pastoral1" onchange="pastoralFeedback('pastoral1', 'has')">
+                            <option value="">Choose...</option>
+                            <option value="has">has</option>
+                            <option value="have">have</option>
+                        </select> beautiful traditions. Everyone 
+                        <select id="pastoral2" onchange="pastoralFeedback('pastoral2', 'benefits')">
+                            <option value="">Choose...</option>
+                            <option value="benefits">benefits</option>
+                            <option value="benefit">benefit</option>
+                        </select> when love 
+                        <select id="pastoral3" onchange="pastoralFeedback('pastoral3', 'unites')">
+                            <option value="">Choose...</option>
+                            <option value="unites">unites</option>
+                            <option value="unite">unite</option>
+                        </select> different backgrounds."</p>
+                        <div id="pastoral1-result"></div>
+                        <div id="pastoral2-result"></div>
+                        <div id="pastoral3-result"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-passage" style="background: #fff3cd; border-left: 4px solid #ffc107; color: #333;">
+                <h4>🙏 Scenario B: Volunteer Guidance</h4>
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <div class="question">
+                        <p style="color: #333;"><strong>You respond:</strong> "Your willingness to serve 
+                        <select id="pastoral4" onchange="pastoralFeedback('pastoral4', 'shows')">
+                            <option value="">Choose...</option>
+                            <option value="shows">shows</option>
+                            <option value="show">show</option>
+                        </select> God's love in your heart. Neither your busy schedule nor your limitations 
+                        <select id="pastoral5" onchange="pastoralFeedback('pastoral5', 'prevents')">
+                            <option value="">Choose...</option>
+                            <option value="prevents">prevents</option>
+                            <option value="prevent">prevent</option>
+                        </select> you from serving. All of us 
+                        <select id="pastoral6" onchange="pastoralFeedback('pastoral6', 'contribute')">
+                            <option value="">Choose...</option>
+                            <option value="contributes">contributes</option>
+                            <option value="contribute">contribute</option>
+                        </select> in different ways."</p>
+                        <div id="pastoral4-result"></div>
+                        <div id="pastoral5-result"></div>
+                        <div id="pastoral6-result"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-passage" style="background: #d4edda; border-left: 4px solid #28a745; color: #333;">
+                <h4>✝️ Scenario C: Family Spiritual Guidance</h4>
+                <div style="background: #fff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px solid #dee2e6;">
+                    <div class="question">
+                        <p style="color: #333;"><strong>You counsel:</strong> "Each teenager 
+                        <select id="pastoral7" onchange="pastoralFeedback('pastoral7', 'goes')">
+                            <option value="">Choose...</option>
+                            <option value="goes">goes</option>
+                            <option value="go">go</option>
+                        </select> through phases of questioning. The church 
+                        <select id="pastoral8" onchange="pastoralFeedback('pastoral8', 'welcomes')">
+                            <option value="">Choose...</option>
+                            <option value="welcomes">welcomes</option>
+                            <option value="welcome">welcome</option>
+                        </select> honest questions. Everyone in your family 
+                        <select id="pastoral9" onchange="pastoralFeedback('pastoral9', 'needs')">
+                            <option value="">Choose...</option>
+                            <option value="needs">needs</option>
+                            <option value="need">need</option>
+                        </select> patience and understanding during this time."</p>
+                        <div id="pastoral7-result"></div>
+                        <div id="pastoral8-result"></div>
+                        <div id="pastoral9-result"></div>
+                    </div>
+                </div>
             </div>
             
-            <div id="email-feedback">
-                <p><strong>Professional Errors Fixed:</strong> <span id="email-count">0</span>/5</p>
-            </div>
+            <button onclick="checkAllPastoral()" class="btn" style="background: linear-gradient(135deg, #2196f3, #1976d2); margin-top: 15px;">📊 Check All Responses</button>
+            <div id="pastoral-summary" style="margin-top: 15px;"></div>
         </div>
     </div>
 
@@ -188,60 +301,213 @@
 
     <script src="script.js"></script>
     <script>
-        const finalAnswers = {
-            final1: "begins",
-            final2: "have",
-            final3: "walks",
-            final4: "applaud", 
-            final5: "feels",
-            final6: "spreads"
-        };
-
         let emailErrorsFixed = 0;
+        let errorsFoundA = 0;
+        let errorsFoundB = 0;
 
-        function checkFinalQuiz() {
-            let correct = 0;
-            let total = 6;
+        function checkSpeakingChallenge() {
+            const presentationText = document.getElementById('presentation-text').value.toLowerCase();
+            const communityText = document.getElementById('community-text').value.toLowerCase();
             
-            for (let i = 1; i <= 6; i++) {
-                const elementId = `final${i}`;
-                const resultId = `final-result${i}`;
-                let userAnswer;
-                
-                if (document.getElementById(elementId).tagName === 'SELECT') {
-                    userAnswer = document.getElementById(elementId).value;
+            let feedback = '<h4>🎤 Speaking Practice Analysis:</h4>';
+            let score = 0;
+            let total = 8;
+            
+                         // Check sermon answers
+             const sermonAnswers = ['has', 'finds', 'teach', 'brings'];
+             sermonAnswers.forEach(answer => {
+                 if (presentationText.includes(answer)) score++;
+             });
+             
+             // Check parish council answers  
+             const parishAnswers = ['needs', 'deserves', 'work', 'agrees'];
+             parishAnswers.forEach(answer => {
+                 if (communityText.includes(answer)) score++;
+             });
+            
+            const percentage = Math.round((score / total) * 100);
+            
+            if (percentage >= 85) {
+                feedback += '<p class="correct">🌟 Excellent! Your grammar accuracy is outstanding. Now practice speaking these out loud!</p>';
+            } else if (percentage >= 70) {
+                feedback += '<p style="color: #856404;">👍 Good work! Review the missed items and practice speaking with confidence.</p>';
                 } else {
-                    userAnswer = document.getElementById(elementId).value.trim().toLowerCase();
-                }
-                
-                const resultDiv = document.getElementById(resultId);
-                
-                if (userAnswer === finalAnswers[elementId]) {
-                    correct++;
-                    resultDiv.innerHTML = '<span class="correct">✓ Excellent!</span>';
-                } else if (userAnswer === "") {
-                    resultDiv.innerHTML = '<span class="incorrect">Please provide an answer</span>';
-                } else {
-                    resultDiv.innerHTML = `<span class="incorrect">✗ Should be "${finalAnswers[elementId]}"</span>`;
+                feedback += '<p class="incorrect">💪 Keep practicing! Focus on subject identification and speaking slowly for accuracy.</p>';
+            }
+            
+            feedback += `<p><strong>Grammar Accuracy:</strong> ${score}/8 correct (${percentage}%)</p>`;
+            feedback += '<p><em>Remember: The real test is speaking these sentences clearly and confidently!</em></p>';
+            
+            document.getElementById('speaking-results').innerHTML = feedback;
+        }
+
+        function reviewWriting() {
+            const emailText = document.getElementById('email-writing').value.toLowerCase();
+            const socialPost = document.getElementById('social-post').value;
+            
+            let feedback = '<h4>✍️ Writing Mastery Review:</h4>';
+            let emailScore = 0;
+            let socialScore = 0;
+            
+                         // Check newsletter for key grammar elements
+             const grammarElements = ['congregation', 'everyone', 'each', 'community', 'parish'];
+             grammarElements.forEach(element => {
+                 if (emailText.includes(element)) emailScore++;
+             });
+            
+            // Check social post
+            if (socialPost.length > 0 && socialPost.length <= 140) {
+                socialScore += 2;
+                if (socialPost.toLowerCase().includes('everyone') || socialPost.toLowerCase().includes('grammar')) {
+                    socialScore += 1;
                 }
             }
             
-            const scoreDiv = document.getElementById('final-score');
-            const percentage = Math.round((correct / total) * 100);
+            if (emailScore >= 4 && socialScore >= 2) {
+                feedback += '<p class="correct">🎉 Excellent writing! You demonstrate mastery of complex grammar in real contexts.</p>';
+            } else if (emailScore >= 3 || socialScore >= 2) {
+                feedback += '<p style="color: #856404;">👍 Good progress! Your writing shows understanding with room for refinement.</p>';
+            } else {
+                feedback += '<p class="incorrect">💪 Keep developing! Focus on including more complex grammar structures in your writing.</p>';
+            }
             
-            let message = `<h4>Final Quiz Results: ${correct}/${total} (${percentage}%)</h4>`;
+            feedback += `<p><strong>Email Elements:</strong> ${emailScore}/5 | <strong>Social Post:</strong> ${socialScore}/3</p>`;
+            feedback += '<p><em>Great writing comes from applying grammar rules naturally in real communication!</em></p>';
+            
+            document.getElementById('writing-results').innerHTML = feedback;
+        }
+
+                 let attemptsA = 0;
+         let attemptsB = 0;
+         const errorsInTextA = ['celebrate', 'bring', 'supports', 'believe', 'were'];
+         const errorsInTextB = ['have', 'explain', 'were', 'reviews', 'agree', 'are'];
+
+         function checkWord(element, currentWord, correctWord, textType) {
+             if (textType === 'a') {
+                 attemptsA++;
+                 document.getElementById('attempts-a').textContent = attemptsA;
+             } else {
+                 attemptsB++;
+                 document.getElementById('attempts-b').textContent = attemptsB;
+             }
+
+             const isError = (textType === 'a') ? errorsInTextA.includes(currentWord) : errorsInTextB.includes(currentWord);
+             
+             if (isError) {
+                 // Correct! This was an error
+                 element.textContent = correctWord;
+                 element.style.backgroundColor = '#d4edda';
+                 element.style.color = '#155724';
+                 element.style.border = '2px solid #28a745';
+                 element.onclick = null;
+                 
+                 if (textType === 'a') {
+                     errorsFoundA++;
+                     document.getElementById('errors-found-a').textContent = errorsFoundA;
+                     document.getElementById('feedback-a').innerHTML = 
+                         `<p style="color: #28a745;">✓ Correct! "${currentWord}" should be "${correctWord}"</p>`;
+                 } else {
+                     errorsFoundB++;
+                     document.getElementById('errors-found-b').textContent = errorsFoundB;
+                     document.getElementById('feedback-b').innerHTML = 
+                         `<p style="color: #28a745;">✓ Correct! "${currentWord}" should be "${correctWord}"</p>`;
+                 }
+                 
+                 if (errorsFoundA === 5 && errorsFoundB === 5) {
+                     document.getElementById('error-detection-summary').innerHTML = 
+                                                    '<div style="background: #d4edda; padding: 15px; border-radius: 8px; color: #155724;"><h4>🎯 Error Detection Mastery Achieved!</h4><p>You found all 10 errors! You\'re now ready to proofread professional documents with confidence.</p></div>';
+                 }
+             } else {
+                 // Incorrect - this word is actually correct
+                 element.style.backgroundColor = '#f8d7da';
+                 element.style.color = '#721c24';
+                 element.style.border = '2px solid #dc3545';
+                 
+                 setTimeout(() => {
+                     element.style.backgroundColor = '';
+                     element.style.color = '';
+                     element.style.border = '';
+                 }, 1500);
+                 
+                 if (textType === 'a') {
+                     document.getElementById('feedback-a').innerHTML = 
+                         `<p style="color: #dc3545;">✗ "${currentWord}" is actually correct here. Keep looking!</p>`;
+                 } else {
+                     document.getElementById('feedback-b').innerHTML = 
+                         `<p style="color: #dc3545;">✗ "${currentWord}" is actually correct here. Keep looking!</p>`;
+                 }
+             }
+         }
+
+        // Character counter for social media post
+        document.addEventListener('DOMContentLoaded', function() {
+            const socialPost = document.getElementById('social-post');
+            const charCount = document.getElementById('char-count');
+            
+            socialPost.addEventListener('input', function() {
+                const remaining = 140 - this.value.length;
+                charCount.textContent = remaining;
+                charCount.style.color = remaining < 20 ? '#dc3545' : '#6c757d';
+            });
+        });
+
+        function pastoralFeedback(elementId, correctAnswer) {
+            const userAnswer = document.getElementById(elementId).value;
+            const resultDiv = document.getElementById(elementId + '-result');
+            
+            if (userAnswer === correctAnswer) {
+                resultDiv.innerHTML = '<p style="color: #28a745; font-weight: bold;">✓ Excellent pastoral guidance!</p>';
+            } else if (userAnswer && userAnswer !== correctAnswer) {
+                resultDiv.innerHTML = `<p style="color: #dc3545; font-weight: bold;">Try "${correctAnswer}" - this creates more caring, clear communication.</p>`;
+            }
+        }
+
+        function checkAllPastoral() {
+            const answers = {
+                pastoral1: 'has',
+                pastoral2: 'benefits', 
+                pastoral3: 'unites',
+                pastoral4: 'shows',
+                pastoral5: 'prevents',
+                pastoral6: 'contribute',
+                pastoral7: 'goes',
+                pastoral8: 'welcomes',
+                pastoral9: 'needs'
+            };
+            
+            let correct = 0;
+            let total = Object.keys(answers).length;
+            
+            for (let questionId in answers) {
+                const userAnswer = document.getElementById(questionId).value;
+                const resultDiv = document.getElementById(questionId + '-result');
+                
+                if (userAnswer === answers[questionId]) {
+                    correct++;
+                    resultDiv.innerHTML = '<p style="color: #28a745; font-weight: bold;">✓ Perfect!</p>';
+                } else if (userAnswer === "") {
+                    resultDiv.innerHTML = '<p style="color: #856404;">Please make a selection</p>';
+                } else {
+                    resultDiv.innerHTML = `<p style="color: #dc3545; font-weight: bold;">✗ Should be "${answers[questionId]}"</p>`;
+                }
+            }
+            
+            const percentage = Math.round((correct / total) * 100);
+            let summary = `<h4>📊 Pastoral Communication Results: ${correct}/${total} (${percentage}%)</h4>`;
             
             if (percentage >= 90) {
-                message += '<p class="correct">🎉 Outstanding! You\'ve mastered subject-verb agreement!</p>';
+                summary += '<div style="background: #d4edda; padding: 15px; border-radius: 8px; color: #155724;"><p>🌟 <strong>Outstanding pastoral communication!</strong> Your grammar accuracy ensures your spiritual guidance comes through clearly and professionally. Your parishioners will feel confident in your wisdom and care.</p></div>';
             } else if (percentage >= 80) {
-                message += '<p class="correct">🌟 Excellent work! You have strong skills.</p>';
+                summary += '<div style="background: #d4edda; padding: 15px; border-radius: 8px; color: #155724;"><p>✨ <strong>Excellent work!</strong> You demonstrate strong grammar skills in pastoral contexts. This clarity helps build trust and understanding with those you serve.</p></div>';
             } else if (percentage >= 70) {
-                message += '<p style="color: #856404;">👍 Good job! Review the areas you missed for even better results.</p>';
+                summary += '<div style="background: #fff3cd; padding: 15px; border-radius: 8px; color: #856404;"><p>👍 <strong>Good progress!</strong> Your pastoral heart shines through. Continue practicing these grammar patterns to make your guidance even more impactful.</p></div>';
             } else {
-                message += '<p class="incorrect">💪 Keep practicing! Review the lessons and try again.</p>';
+                summary += '<div style="background: #f8d7da; padding: 15px; border-radius: 8px; color: #721c24;"><p>💪 <strong>Keep practicing!</strong> Focus on the subject-verb patterns that appear most in pastoral conversations. Review the lessons and try again.</p></div>';
             }
             
-            scoreDiv.innerHTML = message;
+            summary += '<div style="background: #e7f3ff; padding: 15px; border-radius: 8px; margin-top: 10px;"><p><strong>💡 Ministry Insight:</strong> Clear, grammatically correct speech in pastoral care builds confidence and trust. When people hear careful, thoughtful language, they know they\'re receiving careful, thoughtful guidance.</p></div>';
+            
+            document.getElementById('pastoral-summary').innerHTML = summary;
         }
 
         function fixEmailError(num, wrong, correct) {
@@ -315,6 +581,35 @@
         
         .email-error:hover {
             background-color: #f5c6cb;
+        }
+        
+#text-a span, #text-b span, #parish-newsletter span {
+            cursor: pointer;
+            padding: 2px 4px;
+            border-radius: 3px;
+            transition: background-color 0.2s;
+        }
+        
+        #text-a span:hover, #text-b span:hover, #parish-newsletter span:hover {
+            background-color: #e3f2fd;
+            outline: 1px dashed #2196f3;
+        }
+        
+        .correct {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .incorrect {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        textarea {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            resize: vertical;
         }
     </style>
 
